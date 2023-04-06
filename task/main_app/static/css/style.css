@@ -1,0 +1,41 @@
+body {
+    background-color: #dddbdf;
+    font-family: serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1 0 auto;
+    align-items: center;
+  }
+  h1,h2,h3,h4,h5,h6{
+    text-align: center;
+  }
+  p{
+    font-size: 18px;
+  }
+  
+  footer.page-footer {
+    padding-top: 0;
+  
+  }
+  .card-content img{
+    float: right;
+  
+  }
+  
+  .card-image img{
+    object-fit: cover;
+
+  }
+
+  .btn{
+    width: 100%;
+    background-color: #4f5961;
+  }
+  .btn:hover{
+    background-color: #416c94;
+  }
+  

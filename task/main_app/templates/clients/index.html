@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Client List</h1>
+<a class="btn" href="{%url 'clients_create'%}">add Client</a>
+
+
+
+
+
+
+<div class="row">
+  {% for client in clients %}
+  <a href="{% url 'details' client.id%}">
+  <div class="col s12 m6 l3">
+    <div class="card">
+      <div class="card-image">
+        <img src="{% static client.pic|cut:'main_app/static/' %}"/>
+        <!-- <span class="card-title">{{ client.name }}</span> -->
+      </div>
+    </div>
+  </div>
+</a>
+  {% endfor %}
+</div>
+
+         
+
+
+{% endblock %}
+
+
+
